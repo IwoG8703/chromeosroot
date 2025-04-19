@@ -48,31 +48,45 @@ Whether you're running **FydeOS** or using the **Brunch Framework**, you're in t
 
 Open the ChromeOS terminal:
 
+```sh
 Ctrl + Alt + T
+```
 
-Enter the system shell:
+Then enter the system shell:
 
+```sh
 shell
+```
 
-Become root:
+Switch to root:
 
+```sh
 sudo bash
+```
 
-Navigate to the Android VM kernel directory:
+Navigate to the Android subsystem's kernel directory:
 
+```sh
 cd /opt/google/vms/android
+```
 
-(✅ Optional) Backup the original kernel:
+(Optional) Back up the current kernel:
 
+```sh
 mv vmlinux vmlinux.orig
+```
 
-Copy the patched kernel:
+Copy the new kernel:
 
+```sh
 cp /home/chronos/user/Downloads/bzImage ./vmlinux
+```
 
 Reboot the system:
 
+```sh
 sudo reboot
+```
 
 ---
 
@@ -95,13 +109,14 @@ You now have enhanced permissions for apps, debugging, and modding.
 ## 💡 Tips & Notes
 
 - 🔄 You can **restore** the original kernel anytime:
-  mv vmlinux.orig vmlinux
+  ```mv vmlinux.orig vmlinux
   sudo reboot
+  ```
 
-- 🧯 If something breaks, try booting into recovery or re-flashing your system.
+- 🧯 If something breaks, try re-flashing your system.
 - ⚙️ Consider pairing this root setup with **Magisk**, **ADB**, or **custom system images** for more power.
 
 ---
 
 Made with ❤️ by the community.  
-PRs, forks, and feedback are welcome!
+PRs and feedback are welcome!
