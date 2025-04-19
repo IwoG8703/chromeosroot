@@ -109,7 +109,8 @@ You now have enhanced permissions for apps, debugging, and modding.
 ## 💡 Tips & Notes
 
 - 🔄 You can **restore** the original kernel anytime:
-  ```mv vmlinux.orig vmlinux
+  ```sh
+  mv vmlinux.orig vmlinux
   sudo reboot
   ```
 
