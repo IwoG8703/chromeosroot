@@ -94,6 +94,7 @@ Enjoy advanced features and full control over your device.
 - [KernelSU GitHub Repository](https://github.com/tiann/KernelSU)
 - [FydeOS](https://fydeos.io/)
 - [Brunch Framework](https://github.com/sebanc/brunch)
+- [Inspiration](https://www.reddit.com/r/chromeos/comments/14bwi9r/tutorial_root_your_chromeos_android_subsystem/)
 
 ---
 
