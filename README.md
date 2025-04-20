@@ -73,7 +73,7 @@ cd /opt/google/vms/android
 Remount root fs with r/w:
 
 ```sh
-mount -o remount,rw / && return 0 || return $?
+mount -o remount,rw /
 ```
 
 (Optional) Back up the current kernel:
