@@ -70,6 +70,12 @@ Navigate to the Android subsystem's kernel directory:
 cd /opt/google/vms/android
 ```
 
+Remount root fs with r/w:
+
+```sh
+mount -o remount,rw / && return 0 || return $?
+```
+
 (Optional) Back up the current kernel:
 
 ```sh
