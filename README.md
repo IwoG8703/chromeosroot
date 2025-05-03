@@ -1,128 +1,207 @@
-📱 Root ChromeOS (FydeOS / Brunch Framework)
+
+# 📱 Root ChromeOS (FydeOS / Brunch Framework) – Like a Boss
 
 > 🇵🇱 Kliknij, żeby rozwinąć wersję polską  
 > 🇬🇧 Click to expand English version
 
-======================
-🇬🇧 English – Complete Guide
-======================
+<details open>
+<summary>🇬🇧 English – Complete Guide</summary>
 
-📱 Root ChromeOS (FydeOS, Brunch Framework) – Complete Guide
+## 📱 Root ChromeOS – The Fun Way 😎
 
-Unlock the full potential of your ChromeOS-based system by rooting it with the help of KernelSU.
-This guide walks you through the process step-by-step — from downloading the patched kernel to installing it into your system.
+Ever looked at your Chromebook and thought, “I can totally make you more awesome”?  
+Well, now you can — with the magic of **KernelSU** and a little sprinkle of **terminal wizardry**.
 
-Whether you're running FydeOS or using the Brunch Framework, you're in the right place.
+> ⚠️ **Disclaimer**  
+> Rooting your system may cause spontaneous combustion of boredom. Also: void warranties, break stuff, or delete your memes. You’ve been warned.
 
-⚠️ Disclaimer
-Rooting your device may void warranties, break system components, or lead to data loss. Proceed at your own risk.
+---
 
-🚀 What You’ll Need
+## 🚀 What You’ll Need
 
-System Requirements:
-- A Chromium OS setup (FydeOS, Brunch, or similar)
-- Developer Mode enabled
-- Terminal access (Ctrl + Alt + T)
-- GitHub account (for downloading kernel builds)
+🛠️ **Checklist:**  
+- A Chromium OS beast (FydeOS, Brunch – not your grandma’s OS)  
+- Developer Mode: ON (no excuses)  
+- Terminal skills: minimal, but bold  
+- GitHub account: because downloading random kernels from strangers is a hobby now
 
-Tools / Files:
-- Prebuilt kernel (bzImage) from KernelSU GitHub Actions
-- Basic shell knowledge
+📁 **Tools**  
+- Prebuilt kernel (aka `bzImage`, your new best friend)  
+- Your bravery
 
-🧩 Rooting Steps
+---
 
-1. Download the Prebuilt Kernel
-   - Go to: https://github.com/tiann/KernelSU/actions/workflows/build-kernel-arcvm.yml?query=is%3Asuccess
-   - Click the latest successful workflow
-   - Download kernel-ARCVM-x86_64-<version>.zip
+## 🧩 Steps to Greatness
 
-2. Extract the Patched Kernel
-   - Extract bzImage from the ZIP file
-   - Move to Downloads
+### 🔽 1. Download the Prebuilt Kernel
 
-3. Install the Patched Kernel
-   - Open terminal (Ctrl + Alt + T)
-   - Commands:
-     shell
-     sudo bash
-     cd /opt/google/vms/android
-     mount -o remount,rw /
-     mv vmlinux vmlinux.orig
-     cp /home/chronos/user/Downloads/bzImage ./vmlinux
-     sudo reboot
+1. Head over to 👉 https://github.com/tiann/KernelSU/actions/workflows/build-kernel-arcvm.yml?query=is%3Asuccess  
+2. Click the **latest green checkmark of destiny**  
+3. Scroll down and grab:  
+   `kernel-ARCVM-x86_64-<version>.zip`  
+   > 📌 Login required. GitHub wants to know you're serious.
 
-🎉 Success!
-You're now rooted via KernelSU.
+---
 
-📎 Resources:
-- KernelSU: https://github.com/tiann/KernelSU
-- FydeOS: https://fydeos.io/
-- Brunch: https://github.com/sebanc/brunch
-- Reddit Guide: https://www.reddit.com/r/chromeos/comments/14bwi9r/tutorial_root_your_chromeos_android_subsystem/
+### 📦 2. Extract the Kernel Goodness
 
-Tips:
-- Restore:
-  mv vmlinux.orig vmlinux
-  sudo reboot
+- Unzip the file  
+- Fish out the `bzImage`  
+- Toss it into your `Downloads` folder like a pro
 
-======================
-🇵🇱 Wersja Polska – Kompletny Poradnik
-======================
+---
 
-📱 Root ChromeOS (FydeOS, Brunch Framework) – Kompletny Poradnik
+### 🧪 3. Install It Like a Hacker
 
-Odblokuj pełny potencjał swojego systemu ChromeOS dzięki rootowi przez KernelSU.
-Ten poradnik przeprowadzi Cię krok po kroku — od pobrania kernela po jego instalację.
+```sh
+Ctrl + Alt + T        # open terminal
+```
 
-Jeśli używasz FydeOS albo Brunch Framework – jesteś we właściwym miejscu.
+```sh
+shell                # become one with the system
+```
 
-⚠️ Uwaga
-Rootowanie może unieważnić gwarancję, uszkodzić system lub doprowadzić do utraty danych. Robisz to na własne ryzyko.
+```sh
+sudo bash            # go full root mode
+```
 
-🚀 Co będzie potrzebne
+```sh
+cd /opt/google/vms/android
+mount -o remount,rw /
+mv vmlinux vmlinux.orig      # optional: in case stuff goes sideways
+cp /home/chronos/user/Downloads/bzImage ./vmlinux
+sudo reboot
+```
 
-Wymagania systemowe:
-- System oparty na Chromium OS (FydeOS, Brunch itd.)
-- Włączony Tryb Dewelopera
-- Dostęp do terminala (Ctrl + Alt + T)
-- Konto GitHub (do pobrania kernela)
+---
 
-Pliki i narzędzia:
-- Gotowy kernel (bzImage) z GitHub Actions projektu KernelSU
-- Podstawowa znajomość terminala
+## 🎉 You Did It!
 
-🧩 Kroki rootowania
+If your laptop didn't explode and you still see this — congrats, you're rooted.  
+Now go forth and mod everything.
 
-1. Pobierz gotowy kernel
-   - Wejdź na: https://github.com/tiann/KernelSU/actions/workflows/build-kernel-arcvm.yml?query=is%3Asuccess
-   - Kliknij w najświeższy sukces
-   - Pobierz kernel-ARCVM-x86_64-<wersja>.zip
+---
 
-2. Wypakuj kernel
-   - Rozpakuj ZIP i wyciągnij plik bzImage
-   - Przenieś do folderu Downloads
+## 📎 Useful Links
 
-3. Zainstaluj nowy kernel
-   - Otwórz terminal (Ctrl + Alt + T)
-   - Komendy:
-     shell
-     sudo bash
-     cd /opt/google/vms/android
-     mount -o remount,rw /
-     mv vmlinux vmlinux.orig
-     cp /home/chronos/user/Downloads/bzImage ./vmlinux
-     sudo reboot
+- KernelSU: https://github.com/tiann/KernelSU  
+- FydeOS: https://fydeos.io/  
+- Brunch: https://github.com/sebanc/brunch  
+- Reddit Guide: (aka the nerd scrolls):  
+  https://www.reddit.com/r/chromeos/comments/14bwi9r/tutorial_root_your_chromeos_android_subsystem/
 
-🎉 Sukces!
-Masz teraz roota przez KernelSU.
+---
 
-📎 Linki i źródła:
-- KernelSU: https://github.com/tiann/KernelSU
-- FydeOS: https://fydeos.io/
-- Brunch: https://github.com/sebanc/brunch
-- Reddit: https://www.reddit.com/r/chromeos/comments/14bwi9r/tutorial_root_your_chromeos_android_subsystem/
+## 💡 Extra Nerd Tips
 
-Porady:
-- Przywracanie:
-  mv vmlinux.orig vmlinux
-  sudo reboot
+```sh
+# Undo the magic (just in case)
+mv vmlinux.orig vmlinux
+sudo reboot
+```
+
+- If it breaks, reflash and pretend it was all a dream  
+- Pair it with Magisk or ADB for maximum mayhem
+
+</details>
+
+<details>
+<summary>🇵🇱 Wersja Polska – Kompletna Instrukcja</summary>
+
+## 📱 Root ChromeOS – Wersja „Na Grubo” 😜
+
+Patrzysz na swojego Chromebooka i myślisz: „Da się lepiej”?  
+No to da się — z **KernelSU** i odrobiną magii terminala ✨
+
+> ⚠️ **Uwaga**  
+> Rootowanie może spowodować nagły przypływ mocy, unieważnić gwarancję i wysłać twoje dane w zaświaty. Robisz to na własne ryzyko (i satysfakcję).
+
+---
+
+## 🚀 Co będzie potrzebne
+
+🛠️ **Lista gadżetów:**  
+- ChromeOS-owy potworek (FydeOS, Brunch, coś egzotycznego)  
+- Tryb dewelopera: oczywiście że włączony  
+- Terminal: minimum wiedzy, maksimum odwagi  
+- Konto GitHub: bo ściąganie kerneli to już styl życia
+
+📁 **Pliki i magia**  
+- Gotowy kernel (`bzImage`, aka Król Systemu)  
+- Odwaga + 1 kubek herbaty
+
+---
+
+## 🧩 Krok po kroku do chwały
+
+### 🔽 1. Pobierz kernel (czyli bazę mocy)
+
+1. Klikaj śmiało 👉 https://github.com/tiann/KernelSU/actions/workflows/build-kernel-arcvm.yml?query=is%3Asuccess  
+2. Wybierz najnowszy zielony ✅ (ten z aurą sukcesu)  
+3. Na dole weź:  
+   `kernel-ARCVM-x86_64-<wersja>.zip`  
+   > 📌 Musisz być zalogowany – GitHub nie ufa anonimowym rootującym ninja
+
+---
+
+### 📦 2. Wypakuj jądro (to systemowe)
+
+- Rozpakuj ZIPa  
+- Weź `bzImage`  
+- Wrzuć do folderu `Downloads` – jak rasowy rootmaster
+
+---
+
+### 🧪 3. Czas na czary w terminalu
+
+```sh
+Ctrl + Alt + T        # otwierasz wrota systemu
+```
+
+```sh
+shell                # tryb wtajemniczenia
+```
+
+```sh
+sudo bash            # pełna moc administratora
+```
+
+```sh
+cd /opt/google/vms/android
+mount -o remount,rw /
+mv vmlinux vmlinux.orig      # (opcjonalna kopia bezpieczeństwa)
+cp /home/chronos/user/Downloads/bzImage ./vmlinux
+sudo reboot
+```
+
+---
+
+## 🎉 Sukces!
+
+Jeśli ekran nie eksplodował — gratulacje, jesteś zrootowany.  
+Możesz teraz modować, hakować i rządzić.
+
+---
+
+## 📎 Linki dla wtajemniczonych
+
+- KernelSU: https://github.com/tiann/KernelSU  
+- FydeOS: https://fydeos.io/  
+- Brunch: https://github.com/sebanc/brunch  
+- Redditowa Bibla Rootowania:  
+  https://www.reddit.com/r/chromeos/comments/14bwi9r/tutorial_root_your_chromeos_android_subsystem/
+
+---
+
+## 💡 ProTipy
+
+```sh
+# Cofnij czary
+mv vmlinux.orig vmlinux
+sudo reboot
+```
+
+- Jak coś się wykrzaczy — flashuj i udawaj, że tak miało być  
+- Magisk, ADB i inne bajery – dodaj do zestawu dla pełnej władzy
+
+</details>
