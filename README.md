@@ -1,10 +1,10 @@
 
-# 📱 Root ChromeOS (FydeOS / Brunch Framework) – Like a Boss
+# 📱 Root ChromeOS (Stock / FydeOS / Brunch Framework) – Like a Boss
 
 > 🇵🇱 Kliknij, żeby rozwinąć wersję polską  
 > 🇬🇧 Click to expand English version
 
-<details open>
+<details>
 <summary>🇬🇧 English – Complete Guide</summary>
 
 ## 📱 Root ChromeOS – The Fun Way 😎
@@ -20,7 +20,7 @@ Well, now you can — with the magic of **KernelSU** and a little sprinkle of **
 ## 🚀 What You’ll Need
 
 🛠️ **Checklist:**  
-- A Chromium OS beast (FydeOS, Brunch – not your grandma’s OS)  
+- A Chromium OS beast (FydeOS, Brunch, Stock ChromeOS (NOT FLEX!) – not your grandma’s OS)  
 - Developer Mode: ON (no excuses)  
 - Terminal skills: minimal, but bold  
 - GitHub account: because downloading random kernels from strangers is a hobby now
@@ -121,7 +121,7 @@ No to da się — z **KernelSU** i odrobiną magii terminala ✨
 ## 🚀 Co będzie potrzebne
 
 🛠️ **Lista gadżetów:**  
-- ChromeOS-owy potworek (FydeOS, Brunch, coś egzotycznego)  
+- ChromeOS-owy potworek (FydeOS, Brunch, Stock ChromeOS (NIE FLEX!) - nie coś egzotycznego)  
 - Tryb dewelopera: oczywiście że włączony  
 - Terminal: minimum wiedzy, maksimum odwagi  
 - Konto GitHub: bo ściąganie kerneli to już styl życia
